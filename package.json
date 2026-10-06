@@ -1,0 +1,41 @@
+{
+  "name": "tcmb-fx-engine",
+  "version": "0.1.0",
+  "description": "Zero-dependency type-safe TypeScript engine for TCMB (Central Bank of the Republic of Turkey) exchange rates, cross-currency math, and corporate foreign exchange revaluation (VUK & TDHP 646/656).",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "example:quickstart": "tsx examples/quickstart.ts",
+    "example:revaluation": "tsx examples/revaluation-flow.ts"
+  },
+  "keywords": [
+    "tcmb",
+    "central-bank",
+    "turkey",
+    "exchange-rates",
+    "forex",
+    "cross-rates",
+    "currency-converter",
+    "evds",
+    "revaluation",
+    "kambiyo",
+    "vuk",
+    "tdhp",
+    "fintech",
+    "typescript"
+  ],
+  "author": "Yasin BALÇIK <yasinbalcik74@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
